@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Briefing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media print {
+        body {
+          background-color: white;
+        }
+        .no-print {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6">
+    <div class="w-full max-w-full sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl bg-white rounded-2xl shadow-lg border border-gray-300 p-4 sm:p-6 lg:p-8">
+      <!-- Header Section -->
+      <div class="mb-6 border border-gray-300 rounded-lg p-4">
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+          <img src="https://parksonspackaging.com/wp-content/uploads/2023/08/Parksons-logo-1-190x44.png" alt="Company Logo" class="h-auto max-h-12 sm:max-h-16 lg:max-h-20 w-auto mb-4 sm:mb-0" />
+          <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold text-center">PROJECT BRIEFING</h1>
+          <p class="text-center sm:text-right font-bold mt-4 sm:mt-0">DOC NO: FO/MKT-15</p>
+        </div>
+      </div>
+
+      <!-- Form Section 1 -->
+      <div class="border border-gray-300 rounded-lg p-4 sm:p-6 mb-6">
+        <form id="production_plant" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Row 1 -->
+          <div>
+            <label class="block text-gray-600 mb-1">PRODUCTION PLANT</label>
+            <select name="production_plant" required class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500 text-sm sm:text-base">
+              <option value="" disabled selected class="text-sm sm:text-base">Select Plant</option>
+              <option value="1100 - DAMAN" class="text-sm sm:text-base">1100 - DAMAN</option>
+              <option value="1200 - CHAKAN" class="text-sm sm:text-base">1200 - CHAKAN</option>
+              <option value="1400 - PANTNAGAR I" class="text-sm sm:text-base">1400 - PANTNAGAR I</option>
+              <option value="1500- PANTNAGAR II" class="text-sm sm:text-base">1500- PANTNAGAR II</option>
+              <option value="1600 - SRICITY" class="text-sm sm:text-base">1600 - SRICITY</option>
+              <option value="1700 - GUWAHATI" class="text-sm sm:text-base">1700 - GUWAHATI</option>
+              <option value="1800 - GOA" class="text-sm sm:text-base">1800 - GOA</option>
+              <option value="1900 - RAJPURA" class="text-sm sm:text-base">1900 - RAJPURA</option>
+              <option value="2000 - BADDI" class="text-sm sm:text-base">2000 - BADDI</option>
+              <option value="TZ00 - TANZANIA" class="text-sm sm:text-base">TZ00 - TANZANIA</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-gray-600 mb-1">PREPRESS PLANT</label>
+            <select name="prepress_plant" required class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500 text-sm sm:text-base">
+              <option value="" disabled selected class="text-sm sm:text-base">Select Plant</option>
+              <option value="1100 - DAMAN" class="text-sm sm:text-base">1100 - DAMAN</option>
+              <option value="1200 - CHAKAN" class="text-sm sm:text-base">1200 - CHAKAN</option>
+              <option value="1400 - PANTNAGAR I" class="text-sm sm:text-base">1400 - PANTNAGAR I</option>
+              <option value="1500- PANTNAGAR II" class="text-sm sm:text-base">1500- PANTNAGAR II</option>
+              <option value="1600 - SRICITY" class="text-sm sm:text-base">1600 - SRICITY</option>
+              <option value="1700 - GUWAHATI" class="text-sm sm:text-base">1700 - GUWAHATI</option>
+              <option value="1800 - GOA" class="text-sm sm:text-base">1800 - GOA</option>
+              <option value="1900 - RAJPURA" class="text-sm sm:text-base">1900 - RAJPURA</option>
+              <option value="2000 - BADDI" class="text-sm sm:text-base">2000 - BADDI</option>
+              <option value="TZ00 - TANZANIA" class="text-sm sm:text-base">TZ00 - TANZANIA</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-gray-600 mb-1">Date</label>
+            <input type="date" name="form_date" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" />
+          </div>
+          <div>
+            <label class="block text-gray-600 mb-1">CUSTOMER NAME</label>
+            <input type="text" name="customer_name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" />
+          </div>
+          <div>
+            <label class="block text-gray-600 mb-1">BRAND NAME</label>
+            <input type="text" name="brand_name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" />
+          </div>
+          <div>
+            <label class="block text-gray-600 mb-1">PKD Required? (YES/NO | Details)</label>
+            <select name="pkd_required" required class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500 text-sm sm:text-base">
+              <option value="" disabled selected class="text-sm sm:text-base">Select</option>
+              <option value="YES" class="text-sm sm:text-base">YES</option>
+              <option value="NO" class="text-sm sm:text-base">NO</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-gray-600 mb-1">PKD Required Details</label>
+            <input type="text" name="pkd_required_details" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" />
+          </div>
+        </form>
+      </div>
+
+      <!-- Form Section 2 -->
+      <div class="border border-gray-300 rounded-lg p-4 sm:p-6 mb-6">
+        <form id="carton_specification" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="col-span-full bg-gray-200 text-center text-lg font-semibold p-2 rounded">
+            <p>CARTON SPECIFICATION</p>
+          </div>
+          <div>
+            <label class="block text-gray-600 mb-1">BOARD GSM</label>
+            <input type="text" name="board_gsm" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 text-sm sm:text-base" />
+          </div>
+          <div>
+            <label class="block text-gray-600 mb-1">BOARD TYPE</label>
+            <select name="board_type" required class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500 text-sm sm:text-base">
+              <option value="" disabled selected class="text-sm sm:text-base">Select Board Type</option>
+              <option value="ART PAPER" class="text-sm sm:text-base">ART PAPER</option>
+              <option value="CHROMO PAPER" class="text-sm sm:text-base">CHROMO PAPER</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-gray-600 mb-1">BOARD MILL</label>
+            <select name="board_mill" required class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500 text-sm sm:text-base">
+              <option value="" disabled selected class="text-sm sm:text-base">Select Board Mill</option>
+              <option value="BILT" class="text-sm sm:text-base">BILT</option>
+              <option value="ITC LTD" class="text-sm sm:text-base">ITC LTD</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
